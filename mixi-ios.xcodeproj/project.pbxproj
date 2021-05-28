@@ -3,18 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		BBDDE4102660B14600D99CB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDE40F2660B14600D99CB1 /* AppDelegate.swift */; };
-		BBDDE4122660B14600D99CB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDE4112660B14600D99CB1 /* SceneDelegate.swift */; };
-		BBDDE4142660B14600D99CB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDE4132660B14600D99CB1 /* ViewController.swift */; };
-		BBDDE4172660B14600D99CB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBDDE4152660B14600D99CB1 /* Main.storyboard */; };
 		BBDDE4192660B14700D99CB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBDDE4182660B14700D99CB1 /* Assets.xcassets */; };
 		BBDDE41C2660B14700D99CB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBDDE41A2660B14700D99CB1 /* LaunchScreen.storyboard */; };
 		BBDDE4272660B14700D99CB1 /* mixi_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDE4262660B14700D99CB1 /* mixi_iosTests.swift */; };
 		BBDDE4322660B14700D99CB1 /* mixi_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDE4312660B14700D99CB1 /* mixi_iosUITests.swift */; };
+		BBDDE4482660BDFE00D99CB1 /* RepositoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDE4472660BDFE00D99CB1 /* RepositoryViewController.swift */; };
+		BBDDE44A2660BE0700D99CB1 /* Repository.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBDDE4492660BE0700D99CB1 /* Repository.storyboard */; };
+		BBDDE44D2660BE6000D99CB1 /* ViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDE44C2660BE6000D99CB1 /* ViewBase.swift */; };
+		BBDDE44F2660BE6F00D99CB1 /* PresenterBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDE44E2660BE6F00D99CB1 /* PresenterBase.swift */; };
+		BBDDE4512660BE7F00D99CB1 /* ViewControllerInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDE4502660BE7F00D99CB1 /* ViewControllerInstantiable.swift */; };
+		BBDDE4532660BE8A00D99CB1 /* PresenterInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDE4522660BE8A00D99CB1 /* PresenterInstantiable.swift */; };
+		BBDDE4562660BEAA00D99CB1 /* ViewControllerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDE4552660BEAA00D99CB1 /* ViewControllerBase.swift */; };
+		BBDDE45A2660BF0900D99CB1 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = BBDDE4592660BF0900D99CB1 /* Toast */; };
+		BBDDE45D2660BFD600D99CB1 /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = BBDDE45C2660BFD600D99CB1 /* Rswift */; };
+		BBDDE4602660C02300D99CB1 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDE45F2660C02300D99CB1 /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +44,6 @@
 /* Begin PBXFileReference section */
 		BBDDE40C2660B14600D99CB1 /* mixi-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mixi-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBDDE40F2660B14600D99CB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BBDDE4112660B14600D99CB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BBDDE4132660B14600D99CB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BBDDE4162660B14600D99CB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BBDDE4182660B14700D99CB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBDDE41B2660B14700D99CB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBDDE41D2660B14700D99CB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +53,14 @@
 		BBDDE42D2660B14700D99CB1 /* mixi-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mixi-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBDDE4312660B14700D99CB1 /* mixi_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mixi_iosUITests.swift; sourceTree = "<group>"; };
 		BBDDE4332660B14700D99CB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBDDE4472660BDFE00D99CB1 /* RepositoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewController.swift; sourceTree = "<group>"; };
+		BBDDE4492660BE0700D99CB1 /* Repository.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Repository.storyboard; sourceTree = "<group>"; };
+		BBDDE44C2660BE6000D99CB1 /* ViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBase.swift; sourceTree = "<group>"; };
+		BBDDE44E2660BE6F00D99CB1 /* PresenterBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterBase.swift; sourceTree = "<group>"; };
+		BBDDE4502660BE7F00D99CB1 /* ViewControllerInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInstantiable.swift; sourceTree = "<group>"; };
+		BBDDE4522660BE8A00D99CB1 /* PresenterInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInstantiable.swift; sourceTree = "<group>"; };
+		BBDDE4552660BEAA00D99CB1 /* ViewControllerBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBase.swift; sourceTree = "<group>"; };
+		BBDDE45F2660C02300D99CB1 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBDDE45A2660BF0900D99CB1 /* Toast in Frameworks */,
+				BBDDE45D2660BFD600D99CB1 /* Rswift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,13 +113,9 @@
 		BBDDE40E2660B14600D99CB1 /* mixi-ios */ = {
 			isa = PBXGroup;
 			children = (
-				BBDDE40F2660B14600D99CB1 /* AppDelegate.swift */,
-				BBDDE4112660B14600D99CB1 /* SceneDelegate.swift */,
-				BBDDE4132660B14600D99CB1 /* ViewController.swift */,
-				BBDDE4152660B14600D99CB1 /* Main.storyboard */,
-				BBDDE4182660B14700D99CB1 /* Assets.xcassets */,
-				BBDDE41A2660B14700D99CB1 /* LaunchScreen.storyboard */,
-				BBDDE41D2660B14700D99CB1 /* Info.plist */,
+				BBDDE43F2660BD3600D99CB1 /* Resources */,
+				BBDDE4402660BD4200D99CB1 /* Sources */,
+				BBDDE4462660BD9400D99CB1 /* Storyboards */,
 			);
 			path = "mixi-ios";
 			sourceTree = "<group>";
@@ -128,6 +138,103 @@
 			path = "mixi-iosUITests";
 			sourceTree = "<group>";
 		};
+		BBDDE43F2660BD3600D99CB1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BBDDE45F2660C02300D99CB1 /* R.generated.swift */,
+				BBDDE41D2660B14700D99CB1 /* Info.plist */,
+				BBDDE4182660B14700D99CB1 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BBDDE4402660BD4200D99CB1 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BBDDE4442660BD7600D99CB1 /* AppDelegate */,
+				BBDDE44B2660BE5300D99CB1 /* Protocols */,
+				BBDDE4432660BD6E00D99CB1 /* Models */,
+				BBDDE4422660BD6A00D99CB1 /* Views */,
+				BBDDE4412660BD6100D99CB1 /* ViewModels */,
+				BBDDE4452660BD8A00D99CB1 /* Utilities */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		BBDDE4412660BD6100D99CB1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BBDDE4422660BD6A00D99CB1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BBDDE4542660BE9E00D99CB1 /* Base */,
+				BBDDE4572660BEC000D99CB1 /* Repository */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BBDDE4432660BD6E00D99CB1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BBDDE4442660BD7600D99CB1 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				BBDDE40F2660B14600D99CB1 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		BBDDE4452660BD8A00D99CB1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BBDDE4462660BD9400D99CB1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BBDDE41A2660B14700D99CB1 /* LaunchScreen.storyboard */,
+				BBDDE4492660BE0700D99CB1 /* Repository.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		BBDDE44B2660BE5300D99CB1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BBDDE44C2660BE6000D99CB1 /* ViewBase.swift */,
+				BBDDE44E2660BE6F00D99CB1 /* PresenterBase.swift */,
+				BBDDE4502660BE7F00D99CB1 /* ViewControllerInstantiable.swift */,
+				BBDDE4522660BE8A00D99CB1 /* PresenterInstantiable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BBDDE4542660BE9E00D99CB1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BBDDE4552660BEAA00D99CB1 /* ViewControllerBase.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		BBDDE4572660BEC000D99CB1 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				BBDDE4472660BDFE00D99CB1 /* RepositoryViewController.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +242,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BBDDE4362660B14700D99CB1 /* Build configuration list for PBXNativeTarget "mixi-ios" */;
 			buildPhases = (
+				BBDDE45E2660BFE200D99CB1 /* ShellScript */,
 				BBDDE4082660B14600D99CB1 /* Sources */,
 				BBDDE4092660B14600D99CB1 /* Frameworks */,
 				BBDDE40A2660B14600D99CB1 /* Resources */,
@@ -144,6 +252,10 @@
 			dependencies = (
 			);
 			name = "mixi-ios";
+			packageProductDependencies = (
+				BBDDE4592660BF0900D99CB1 /* Toast */,
+				BBDDE45C2660BFD600D99CB1 /* Rswift */,
+			);
 			productName = "mixi-ios";
 			productReference = BBDDE40C2660B14600D99CB1 /* mixi-ios.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +327,10 @@
 				Base,
 			);
 			mainGroup = BBDDE4032660B14600D99CB1;
+			packageReferences = (
+				BBDDE4582660BF0900D99CB1 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+				BBDDE45B2660BFD600D99CB1 /* XCRemoteSwiftPackageReference "R.swift" */,
+			);
 			productRefGroup = BBDDE40D2660B14600D99CB1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,8 +348,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBDDE41C2660B14700D99CB1 /* LaunchScreen.storyboard in Resources */,
+				BBDDE44A2660BE0700D99CB1 /* Repository.storyboard in Resources */,
 				BBDDE4192660B14700D99CB1 /* Assets.xcassets in Resources */,
-				BBDDE4172660B14600D99CB1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +369,41 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BBDDE45E2660BFE200D99CB1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$SRCROOT/mixi-ios/Resources/R.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which rswift >/dev/null; then\nrswift generate \"$SRCROOT/mixi-ios/Resources/R.generated.swift\"\nelse\necho \"warning: rswift not installed\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BBDDE4082660B14600D99CB1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBDDE4142660B14600D99CB1 /* ViewController.swift in Sources */,
+				BBDDE44D2660BE6000D99CB1 /* ViewBase.swift in Sources */,
+				BBDDE44F2660BE6F00D99CB1 /* PresenterBase.swift in Sources */,
+				BBDDE4532660BE8A00D99CB1 /* PresenterInstantiable.swift in Sources */,
+				BBDDE4602660C02300D99CB1 /* R.generated.swift in Sources */,
+				BBDDE4562660BEAA00D99CB1 /* ViewControllerBase.swift in Sources */,
+				BBDDE4512660BE7F00D99CB1 /* ViewControllerInstantiable.swift in Sources */,
+				BBDDE4482660BDFE00D99CB1 /* RepositoryViewController.swift in Sources */,
 				BBDDE4102660B14600D99CB1 /* AppDelegate.swift in Sources */,
-				BBDDE4122660B14600D99CB1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +439,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BBDDE4152660B14600D99CB1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BBDDE4162660B14600D99CB1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BBDDE41A2660B14700D99CB1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -438,7 +573,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7MTQ5H3G29;
-				INFOPLIST_FILE = "mixi-ios/Info.plist";
+				INFOPLIST_FILE = "mixi-ios/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +592,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7MTQ5H3G29;
-				INFOPLIST_FILE = "mixi-ios/Info.plist";
+				INFOPLIST_FILE = "mixi-ios/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -593,6 +728,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BBDDE4582660BF0900D99CB1 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		BBDDE45B2660BFD600D99CB1 /* XCRemoteSwiftPackageReference "R.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.Library";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BBDDE4592660BF0900D99CB1 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBDDE4582660BF0900D99CB1 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+		BBDDE45C2660BFD600D99CB1 /* Rswift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBDDE45B2660BFD600D99CB1 /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = Rswift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BBDDE4042660B14600D99CB1 /* Project object */;
 }
